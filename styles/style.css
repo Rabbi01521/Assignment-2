@@ -493,3 +493,78 @@ footer p {
     font-size: 12px;
   }
 }
+
+/* Tablet device  */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  /* Header section mobiles styles */
+
+  header .container {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    justify-content: center;
+  }
+
+  header nav ul li {
+    padding: 5px 12px;
+  }
+
+  header nav ul li a {
+    font-size: 15px;
+  }
+
+  .login button[type="submit"] {
+    padding: 7px 10px;
+  }
+
+  /* Copa amrecia 2021 section mobiles styles */
+
+  .copa-section {
+    height: 540px;
+  }
+  .copa-banner h1 {
+    font-size: 50px;
+    padding: 25px;
+    margin-top: 60px;
+  }
+
+  .copa-image img {
+    width: 100%;
+    margin-top: 110px;
+  }
+
+  /* Card section */
+  .card .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlights-section .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .highlights-info h2 {
+    margin-left: 0px;
+  }
+
+  .highlights-info p {
+    margin-left: 0px;
+  }
+
+  /* highlights section */
+  .watch {
+    margin-left: 22px;
+  }
+
+  /* Schedule section */
+
+  .Schedule .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* latest video section */
+
+  .latest-video .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
