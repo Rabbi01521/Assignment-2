@@ -49,7 +49,7 @@ ol {
 .fab:hover {
   color: #e02c6d;
 }
-/* header section */
+/* header section styles start */
 
 header {
   background-color: #2d25a0 !important;
@@ -105,7 +105,7 @@ header .login {
   color: #e02c6d;
 }
 
-/* Copa america section style */
+/* Copa america section start style */
 .copa-section {
   background-color: #2725a0 !important;
   height: 630px;
@@ -147,7 +147,7 @@ header .login {
   }
 }
 
-/* card section styles */
+/* card section start styles */
 
 .card {
   margin-bottom: 40px;
@@ -184,7 +184,7 @@ header .login {
   color: #6c6c6c;
 }
 
-/* Highlights section styles */
+/* Highlights section strat styles */
 
 .highlights-section {
   margin: 115px 10px;
@@ -220,7 +220,7 @@ header .login {
   width: 100%;
 }
 
-/* Next match Schedule */
+/* Next match Schedule styles start */
 .Schedule {
   margin-bottom: 40px;
 }
@@ -264,7 +264,7 @@ header .login {
   font-size: 14px;
 }
 
-/* Latest Videos */
+/* Latest Videos styles start */
 
 .latest-video {
   margin-bottom: 30px;
@@ -327,7 +327,11 @@ header .login {
   color: #f5f5f5;
 }
 
-/* footer start  */
+.video-section a:hover .far {
+  color: #e02c6d;
+}
+
+/* footer styles start  */
 
 footer {
   margin-bottom: 5px;
@@ -365,6 +369,7 @@ footer p {
 /* mobile device */
 
 @media only screen and (max-width: 688px) {
+  /* Header section mobiles styles */
   .login {
     display: none;
   }
@@ -383,6 +388,8 @@ footer p {
   header nav ul li a {
     font-size: 8px;
   }
+
+  /* Copa amrecia 2021 section mobiles styles */
 
   .container {
     flex-direction: column;
@@ -407,9 +414,13 @@ footer p {
     padding: 20px;
   }
 
+  /* Card section mobiles styles */
+
   .card .container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* highlights-section mobiles styles */
 
   .highlights-section .container {
     grid-template-columns: repeat(1, 1fr);
@@ -438,6 +449,8 @@ footer p {
     margin-left: 0px;
   }
 
+  /* Match Schedule mobiles styles */
+
   .Schedule .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -445,16 +458,19 @@ footer p {
   }
 
   .next-match {
-    /* padding: 11px 5px; */
     box-shadow: 0px 4px 10px 0px rgb(135 135 135 / 10%);
     background-color: #fff;
   }
+
+  /* latest videos mobiles styles */
 
   .latest-video .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
+
+  /* Footer mobiles styles */
 
   footer .container img {
     width: 200px;
