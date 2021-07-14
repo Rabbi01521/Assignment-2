@@ -10,6 +10,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 a {
   text-decoration: none;
 }
@@ -29,11 +33,28 @@ ol {
   padding: 10px 20px;
   color: white;
   margin-left: 64px;
+
+  transition: ease-in-out 0.3s;
+}
+
+.fas {
+  margin-left: 10px;
+}
+
+.hover-style:hover {
+  background-color: aliceblue;
+  color: #e02c6d;
+}
+
+.fab:hover {
+  color: #e02c6d;
 }
 /* header section */
 
 header {
-  background-color: #2d25a0;
+  background-color: #2d25a0 !important;
+  box-shadow: 2px 2px 24px #e02c6d;
+  margin-bottom: 5px;
 }
 
 header .container {
@@ -58,6 +79,10 @@ header nav ul li a {
   color: aliceblue;
 }
 
+nav ul li a:hover {
+  color: #e02c6d;
+}
+
 header .login {
   width: 100px;
 }
@@ -76,15 +101,23 @@ header .login {
   outline: none;
   border: none;
   color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
 }
 
-.login .fas {
-  margin-right: 12px;
+.login .header-btn {
+  margin-right: 7px;
+}
+
+.login button:hover {
+  background-color: aliceblue;
+  color: #e02c6d;
 }
 
 /* Copa america section style */
 .copa-section {
-  background-color: #2d25a0;
+  background-color: #2d25a0 !important;
   height: 600px;
   margin-bottom: 40px;
 }
@@ -100,10 +133,6 @@ header .login {
   font-size: 64px;
   color: whitesmoke;
   padding: 60px;
-}
-
-.copa-banner .fa-arrow-right {
-  margin-left: 10px;
 }
 
 .copa-image {
@@ -201,6 +230,49 @@ header .login {
   width: 100%;
 }
 
+/* Next match Schedule */
+.Schedule {
+  margin-bottom: 40px;
+}
+
+.Schedule h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+.Schedule .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.next-match {
+  padding: 20px 0px;
+  box-shadow: 0px 4px 10px 0px rgb(135 135 135 / 10%);
+  background-color: #fff;
+}
+.next-match-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 16px;
+}
+
+.next-match .time-schedule {
+  color: #ababab;
+  text-align: center;
+}
+
+.next-match .event {
+  text-align: center;
+}
+
+.next-match .learn-more a {
+  display: block;
+  text-align: center;
+  color: #e02c6d;
+  font-size: 14px;
+}
 /* footer start  */
 
 footer {
@@ -220,7 +292,7 @@ footer .container img {
 .social-link a {
   border-radius: 50%;
   padding: 10px;
-  font-size: 32px;
+  font-size: 20px;
   color: #969bab;
   /* background-color: #e6e6e6; */
 }
@@ -235,9 +307,22 @@ footer p {
 /* mobile device */
 
 @media only screen and (max-width: 688px) {
-  .container nav,
   .login {
     display: none;
+  }
+
+  header .container {
+    display: flex;
+    align-items: center;
+    height: 68px;
+  }
+
+  header nav ul li {
+    padding: 5px 10px;
+  }
+
+  header nav ul li a {
+    font-size: 8px;
   }
 
   .container {
@@ -292,6 +377,18 @@ footer p {
     padding: 10px 20px;
     color: white;
     margin-left: 0px;
+  }
+
+  .Schedule .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+
+  .next-match {
+    /* padding: 11px 5px; */
+    box-shadow: 0px 4px 10px 0px rgb(135 135 135 / 10%);
+    background-color: #fff;
   }
 
   footer .container img {
